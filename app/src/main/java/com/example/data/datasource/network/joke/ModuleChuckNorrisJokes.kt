@@ -1,6 +1,6 @@
-package com.example.data.network.joke
+package com.example.data.datasource.network.joke
 
-import com.example.data.network.base.ResultData
+import com.example.data.datasource.network.base.ResultData
 import com.example.model.joke.ChuckNorrisJoke
 
 interface ModuleChuckNorrisJokes {

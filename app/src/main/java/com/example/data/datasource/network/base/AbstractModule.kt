@@ -1,4 +1,4 @@
-package com.example.data.network.base
+package com.example.data.datasource.network.base
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

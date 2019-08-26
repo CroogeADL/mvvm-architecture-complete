@@ -1,6 +1,6 @@
-package com.example.data.network.joke
+package com.example.data.datasource.network.joke
 
-import com.example.data.network.base.ResponseData
+import com.example.data.datasource.network.base.ResponseData
 import com.example.model.joke.ChuckNorrisJokeResponse
 import retrofit2.Call
 import retrofit2.http.GET

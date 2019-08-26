@@ -1,13 +1,13 @@
-package com.example.data.network
+package com.example.data.datasource.network
 
 import com.example.BuildConfig
 import com.example.common.DEFAULT_ERROR_MESSAGE
 import com.example.common.getErrorMessage
-import com.example.data.network.base.BaseAPI
-import com.example.data.network.base.ResponseData
-import com.example.data.network.base.ResultData
-import com.example.data.network.joke.ChuckNorrisJokesModule
-import com.example.data.network.joke.ChuckNorrisJokesService
+import com.example.data.datasource.network.base.BaseAPI
+import com.example.data.datasource.network.base.ResponseData
+import com.example.data.datasource.network.base.ResultData
+import com.example.data.datasource.network.joke.ChuckNorrisJokesModule
+import com.example.data.datasource.network.joke.ChuckNorrisJokesService
 import com.example.mapper.Mapper
 import retrofit2.Call
 import java.lang.Exception

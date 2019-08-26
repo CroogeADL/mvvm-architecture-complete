@@ -1,14 +1,7 @@
 package com.example.data
 
-import com.example.data.network.NetworkDataSource
-import com.example.data.network.base.ResultData
-import com.example.model.joke.ChuckNorrisJoke
+import com.example.data.joke.RepositoryChuckNorrisJokes
 
-class RepositoryImpl constructor(private val networkDataSource: NetworkDataSource) : Repository {
-
-    override fun getRandomJoke(): ResultData<ChuckNorrisJoke> =
-        networkDataSource.chuckNorrisJokesModule().getRandomJoke()
-
-    override fun getRandomJokeAsync(onResult: (resultData: ResultData<ChuckNorrisJoke>) -> Unit) =
-        networkDataSource.chuckNorrisJokesModule().getRandomJokeAsync(onResult)
-}
+class RepositoryImpl constructor(private val chuckNorrisJokesRepository: RepositoryChuckNorrisJokes) :
+    Repository,
+    RepositoryChuckNorrisJokes by chuckNorrisJokesRepository

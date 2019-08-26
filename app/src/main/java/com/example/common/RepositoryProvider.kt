@@ -3,7 +3,8 @@ package com.example.common
 import android.content.Context
 import com.example.data.Repository
 import com.example.data.RepositoryImpl
-import com.example.data.network.NetworkDataSource
+import com.example.data.datasource.network.NetworkDataSource
+import com.example.data.joke.ChuckNorrisJokesRepository
 
 class RepositoryProvider private constructor() {
     companion object {
@@ -15,7 +16,10 @@ class RepositoryProvider private constructor() {
                 //todo use context for initialization another data sources like Shared Preferences, DB etc.
                 val networkDataSource = NetworkDataSource()
 
-                INSTANCE ?: RepositoryImpl(networkDataSource).also { INSTANCE = it }
+                //todo init all repositories
+                val chuckNorrisJokesRepository = ChuckNorrisJokesRepository(networkDataSource)
+
+                INSTANCE ?: RepositoryImpl(chuckNorrisJokesRepository).also { INSTANCE = it }
             }
         }
     }

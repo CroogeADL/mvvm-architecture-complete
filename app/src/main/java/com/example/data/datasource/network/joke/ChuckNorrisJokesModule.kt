@@ -1,8 +1,8 @@
-package com.example.data.network.joke
+package com.example.data.datasource.network.joke
 
-import com.example.data.network.base.ResultData
-import com.example.data.network.execute
-import com.example.data.network.base.AbstractModule
+import com.example.data.datasource.network.base.ResultData
+import com.example.data.datasource.network.execute
+import com.example.data.datasource.network.base.AbstractModule
 import com.example.model.joke.ChuckNorrisJoke
 import com.example.mapper.joker.ChuckNorrisJokeResponseToChuckNorrisJokeMapper
 import kotlinx.coroutines.Dispatchers
