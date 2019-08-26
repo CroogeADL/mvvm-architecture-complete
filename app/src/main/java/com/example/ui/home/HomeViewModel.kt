@@ -5,7 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.common.BaseViewModel
 import com.example.data.Repository
-import com.example.mapper.joker.ChuckNorrisJokeToChuckNorrisJokeUiMapper
+import com.example.mapper.joke.ChuckNorrisJokeToChuckNorrisJokeUiMapper
 import com.example.model.joke.ChuckNorrisJokeUi
 
 class HomeViewModel(application: Application, repository: Repository) : BaseViewModel(application, repository) {

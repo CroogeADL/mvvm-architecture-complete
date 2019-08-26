@@ -1,4 +1,4 @@
-package com.example.mapper.joker
+package com.example.mapper.joke
 
 import com.example.model.joke.ChuckNorrisJokeUi
 import com.example.model.joke.ChuckNorrisJoke

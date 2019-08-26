@@ -4,7 +4,7 @@ import com.example.data.datasource.network.base.ResultData
 import com.example.data.datasource.network.execute
 import com.example.data.datasource.network.base.AbstractModule
 import com.example.model.joke.ChuckNorrisJoke
-import com.example.mapper.joker.ChuckNorrisJokeResponseToChuckNorrisJokeMapper
+import com.example.mapper.joke.ChuckNorrisJokeResponseToChuckNorrisJokeMapper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
