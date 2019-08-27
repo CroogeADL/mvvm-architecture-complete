@@ -1,6 +1,5 @@
 package com.example.ui.home
 
-import androidx.fragment.app.Fragment
 import com.example.R
 import com.example.common.BaseActivity
 
@@ -12,6 +11,5 @@ class HomeActivity : BaseActivity() {
     override val fragmentLayout: Int?
         get() = R.id.fl_content
 
-    override val fragmentForLayout: Fragment?
-        get() = HomeFragment.newInstance()
+    override val fragmentForLayout = HomeFragment.newInstance()
 }
